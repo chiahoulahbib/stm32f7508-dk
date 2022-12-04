@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: lahbib lahbib, none, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+C:\Users\chiah\OneDrive\Bureau\MEGA\MEGAsync\stm32f\EmbeddedProjects\stm32f\c-code\stm32f7\drivers\workspace\stm32f750.uvprojx
+Project File Date:  12/01/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+stm32f7xx_HAL_RCC.c(1): warning: ISO C requires a translation unit to contain at least one declaration [-Wempty-translation-unit]
+1 warning generated.
+compiling stm32f7xx_HAL_RCC.c...
+assembling startup_stm32f750xx.s...
+compiling system_stm32f7xx.c...
+main.c(50): warning: 'return' will never be executed [-Wunreachable-code-return]
+        return 0;
+               ^
+1 warning generated.
+compiling main.c...
+stm32f7xx_HAL_GPIO.c(161): warning: unused function 'LCL_CheckApiStatus' [-Wunused-function]
+void LCL_CheckApiStatus(APIs_State_t *APIs_State)
+     ^
+1 warning generated.
+compiling stm32f7xx_HAL_GPIO.c...
+linking...
+Program Size: Code=1588 RO-data=596 RW-data=4 ZI-data=1636  
+FromELF: creating hex file...
+".\Objects\stm32f750.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F7xx_DFP.2.15.1.pack
+                Keil.STM32F7xx_DFP.2.15.1
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.2.5
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/chiah/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/chiah/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.2.5
+      Source file:   MDK/Device/Source/ARM/STM32F74x_75x_OPT.s
+      Source file:   MDK/Device/Source/ARM/STM32F74x_75x_OTP.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/arm/startup_stm32f750xx.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/system_stm32f7xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
